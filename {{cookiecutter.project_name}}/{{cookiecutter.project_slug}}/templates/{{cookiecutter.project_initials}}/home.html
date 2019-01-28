@@ -1,9 +1,10 @@
-{% extends "base.html" %}
-{% block page_title %}
+{{ '{%' }} extends "base.html" {{ '%}' }}
+{{ '{%' }} load config {{ '%}' }}
+{{ '{%' }} block page_title {{ '%}' }}
     <h3>{{cookiecutter.project_name}}</h3>
-{% endblock %}
+{{ '{%' }} endblock {{ '%}' }}
 
-{% block content %}
+{{ '{%' }} block content {{ '%}' }}
     Your first {{cookiecutter.project_name}} page.
     
-{% endblock %}
+{{ '{%' }} endblock {{ '%}' }}

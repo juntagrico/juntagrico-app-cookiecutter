@@ -1,0 +1,5 @@
+{
+    "project_name": "juntagrico_app",
+    "project_slug": "{{ cookiecutter.organisation_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+    "project_initials": "ja",
+}

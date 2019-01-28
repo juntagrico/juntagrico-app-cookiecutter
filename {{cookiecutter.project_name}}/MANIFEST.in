@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include {{cookiecutter.project_slug}}/templates *
+include requirements.txt
+global-exclude *.pyc

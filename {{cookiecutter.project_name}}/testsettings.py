@@ -117,3 +117,10 @@ GOOGLE_API_KEY = 'AIzaSyCcii4Z71qyky54kEQtRhFbB_z-2zbSU28'
 
 BILLING = True
 
+CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+            'LOCATION': 'juntagrico_app_cache_table',
+            'TIMEOUT': None,
+        }
+    }

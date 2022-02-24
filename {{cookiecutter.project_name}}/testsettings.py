@@ -15,8 +15,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'juntagrico',
     '{{cookiecutter.project_slug}}',
+    'juntagrico',
+    'impersonate',
+    'adminsortable2',
+    'polymorphic',
+    'crispy_forms',
 ]
 
 DATABASES = {
@@ -40,6 +44,7 @@ MIDDLEWARE = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'impersonate.middleware.ImpersonateMiddleware',
 )
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')

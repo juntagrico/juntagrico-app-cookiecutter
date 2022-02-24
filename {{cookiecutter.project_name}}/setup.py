@@ -19,7 +19,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name={{cookiecutter.project_slug}}.name,
-    version={{cookiecutter.project_slug}}.name,
+    version={{cookiecutter.project_slug}}.version,
     packages=find_packages(),
     include_package_data=True,
     license='LPGLv3',  # example license
